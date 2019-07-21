@@ -14,7 +14,7 @@
             width: 100vw;
             display: flex;
             align-items: center;
-            justify-content: center;
+            justify-content: space-around;
             flex-direction: column;
             background-color: #052572;
             font-family: 'Roboto', sans-serif;
@@ -40,6 +40,7 @@
             background: -webkit-linear-gradient(#eee, #17c9fd);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+            margin: 0;
         }
 
         h1 span {
@@ -50,7 +51,8 @@
         h2 {
             font-weight: 300;
             font-size: 2rem;
-            color: #17c9fd
+            color: #17c9fd;
+            margin: 0;
         }
 
         .lights {
@@ -71,7 +73,7 @@
             display: none;
         }
 
-        @media(max-width: 1250px){
+        @media(max-width: 1250px), (max-height: 700px) {
             img {
                 width: 400px;
                 height: 300px;
