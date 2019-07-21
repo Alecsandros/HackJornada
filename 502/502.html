@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" type="image/x-icon" href="../502/apple-touch-icon.png">
+    <title>API</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            background-color: #052572;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 80%;
+            max-width: 1400px
+        }
+
+        img {
+            width: 700px;
+            height: 500px;
+        }
+
+        h1 {
+            font-weight: 600;
+            font-size: 10rem;
+            color: #17c9fd;
+            background: -webkit-linear-gradient(#eee, #17c9fd);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        h1 span {
+            font-weight: 400;
+            font-size: 2rem;
+        }
+
+        h2 {
+            font-weight: 300;
+            font-size: 2rem;
+            color: #17c9fd
+        }
+
+        .lights {
+            animation-name: lights;
+            animation-duration: 2s;
+            -webkit-animation-iteration-count: infinite;
+             animation-iteration-count: infinite;
+        }
+
+        .energy {
+            animation-name: energy;
+            animation-duration: 2s;
+            -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+        }
+
+        .typed-cursor {
+            display: none;
+        }
+
+        @keyframes lights {
+            0% {
+                opacity: 0;
+            } 
+            5% {
+                opacity: 1;
+            }
+            10% {
+                opacity: 0;
+            } 
+            15% {
+                opacity: 1;
+            }
+            20% {
+                opacity: 0;
+            } 
+            60% {
+                opacity: 1;
+            }
+            75% {
+                opacity: 0;
+            } 
+            70% {
+                opacity: 1;
+            }
+
+        }
+
+        @keyframes energy {
+            0% {
+                opacity: 1;
+            } 
+            50% {
+                opacity: 0.5;
+            }
+            55% {
+                opacity: 0;
+            } 
+            60% {
+                opacity: 1;
+            }
+            65% {
+                opacity: 0;
+            }
+            70% {
+                opacity: 1;
+            }
+
+        }
+
+    </style>
+</head>
+<body>
+    <h2 id="subtitle"></h2>
+    <div class="container">
+        <h1 id="title"><span>Error</span>502</h1>
+        <img src="../502/2583727.jpg" alt="">
+    </div>
+    <h2 id="subtitle2"></h2>
+    <script src="../502/typed.min.js"></script>
+    <script>
+        var options = {
+            strings: ["O SERVIDOR NÃO CONSEGUIU CARREGAR POR FALTA DE ENERGIA..."],
+            typeSpeed: 40
+        }
+
+        var options2 = {
+            strings: ["ENCONTRE A ENERGIA EXTRA PELA SALA!"],
+            typeSpeed: 40
+        }
+
+        var typed = new Typed("#subtitle", options);
+
+        setTimeout(function(){
+            var typed2 = new Typed("#subtitle2", options2);
+        }, 4000)
+
+        setTimeout(function(){
+            document.getElementById('subtitle2').classList.add("lights");
+        }, 7000)
+
+        setTimeout(function(){
+            document.querySelector('h1').classList.add("lights");
+        }, 7100)
+
+        setTimeout(function(){
+            document.querySelector('img').classList.add("energy");
+        }, 7200)
+    </script>
+</body>
+</html>
