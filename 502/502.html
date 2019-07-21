@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="shortcut icon" type="image/x-icon" href="./apple-touch-icon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="/apple-touch-icon.png">
     <title>API</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,600&display=swap" rel="stylesheet">
     <style>
@@ -127,38 +127,38 @@
     <h2 id="subtitle"></h2>
     <div class="container">
         <h1 id="title"><span>Error</span>502</h1>
-        <img src="./2583727.jpg" alt="">
+        <img src="/2583727.jpg" alt="">
     </div>
     <h2 id="subtitle2"></h2>
-    <script src="./typed.min.js"></script>
+    <script src="/typed.min.js"></script>
     <script>
         var options = {
             strings: ["O SERVIDOR NÃO CONSEGUIU CARREGAR POR FALTA DE ENERGIA..."],
-            typeSpeed: 60
+            typeSpeed: 40
         }
 
         var options2 = {
             strings: ["ENCONTRE A ENERGIA EXTRA PELA SALA!"],
-            typeSpeed: 60
+            typeSpeed: 40
         }
 
         var typed = new Typed("#subtitle", options);
 
         setTimeout(function(){
             var typed2 = new Typed("#subtitle2", options2);
-        }, 5000)
+        }, 4000)
 
         setTimeout(function(){
             document.getElementById('subtitle2').classList.add("lights");
-        }, 8500)
+        }, 7000)
 
         setTimeout(function(){
             document.querySelector('h1').classList.add("lights");
-        }, 8600)
+        }, 7100)
 
         setTimeout(function(){
             document.querySelector('img').classList.add("energy");
-        }, 8700)
+        }, 7200)
     </script>
 </body>
 </html>
