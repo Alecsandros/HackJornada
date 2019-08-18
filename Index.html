@@ -4,11 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="shortcut icon" type="image/x-icon" href="./Y8hko.png">
-    <title>Stack OverFlow - API</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./hqdefault.jpg">
+    <title>League Of Legends</title>
     <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
     <style>
         body {
+            background: #1a0200;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -110,18 +111,23 @@
             color: white;
             text-align: center;
             margin: 5px 20px;
+            line-height: 50px;
         }
 
         .typed-cursor {
             display: none;
         }
 
+        img,
+        .container {
+            height: 100%;
+        }
 
     </style>
 </head>
 <body>
     <div class="container">
-        <img src="./Stackover.png" alt="">
+        <img src="./Stackover.jpg" alt="">
     </div>
     <div class="fixed"></div>
     <div class="battery">
@@ -155,7 +161,7 @@
                                                                                                             
                                                                          
         </pre>
-        <h1 class="title">SEM ENERGIA</h1>
+        <h1 class="title">SEM ENERGIA!</h1>
         <h2 id="subtitle"></h2>
         <h2 id="subtitle2"></h2>
     </div>
@@ -214,17 +220,17 @@
             document.querySelector('.battery').classList.add('pre-after')
 
             var options = {
-                strings: ["ERRO NÃO ENCONTRADO POR FALTA DE ENERGIA..."],
+                strings: ["A ENERGUA EXTRA QUE VOCÊ PRECISA PARA PASSAR EM QUALQUER FASE ESTÁ NA HEXTECH BOX NO FUNDO DA SALA!"],
                 typeSpeed: 40
             }
 
             var typed = new Typed("#subtitle", options);
         }, 14000, indexBlack)
 
-        var options2 = {
-            strings: ["LEVANTA DA CADEIRA E ENCONTRE A ENERGIA EXTRA PELA SALA!"],
-            typeSpeed: 60
-        }
+        // var options2 = {
+        //     strings: ["LEVANTA DA CADEIRA E ENCONTRE A ENERGIA EXTRA PELA SALA!"],
+        //     typeSpeed: 60
+        // }
 
         setTimeout(function(){
             var typed2 = new Typed("#subtitle2", options2);
